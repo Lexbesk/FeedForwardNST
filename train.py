@@ -11,7 +11,7 @@ import time
 
 def train(config):
     writer = SummaryWriter()
-    device = torch.device("mps")
+    device = torch.device("cuda")
     data_loader = utils.get_data_loader(config)
     # stylization_model = StyleTransfer().train().to(device)
     stylization_model = TransformerNet().train().to(device)

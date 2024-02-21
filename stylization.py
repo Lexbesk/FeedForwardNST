@@ -6,7 +6,7 @@ import utils.utils as utils
 
 
 def stylize(config):
-    device = torch.device('mps')
+    device = torch.device('cuda')
 
     # load the model
     stylization_model = StyleTransfer().to(device)

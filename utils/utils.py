@@ -7,7 +7,7 @@ from torchvision import transforms
 from torchvision import datasets
 import torch
 import matplotlib.pyplot as plt
-import git
+# import git
 
 
 IMAGENET_MEAN_1 = np.array([0.485, 0.456, 0.406])
